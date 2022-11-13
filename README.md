@@ -10,7 +10,7 @@ Vencimiento= 11/25
 
 cvv= 123
 
-nombre del titular = X
+Nombre del titular = X
 
 Las funcionalidades se encuentran en index.js.
 Martin Salvador Privitera
