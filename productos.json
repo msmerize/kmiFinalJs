@@ -1,0 +1,14 @@
+[
+    {"id":1,"marca":"Desigual","modelo":"1","precio":3800,"img":"1.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":2,"marca":"Desigual","modelo":"2","precio":3800,"img":"2.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":3,"marca":"Desigual","modelo":"3","precio":3800,"img":"3.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":4,"marca":"Desigual","modelo":"4","precio":3800,"img":"4.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":5,"marca":"Desigual","modelo":"5","precio":4200,"img":"5.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":6,"marca":"Desigual","modelo":"6","precio":4200,"img":"6.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":7,"marca":"Desigual","modelo":"7","precio":4200,"img":"7.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":8,"marca":"Desigual","modelo":"8","precio":4200,"img":"8.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":9,"marca":"Desigual","modelo":"9","precio":4800,"img":"9.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":10,"marca":"Desigual","modelo":"10","precio":4800,"img":"10.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":11,"marca":"Desigual","modelo":"11","precio":4800,"img":"11.jpg","descripcion":"KMI DSIGUAL","stock":20},
+    {"id":12,"marca":"Desigual","modelo":"12","precio":4800,"img":"12.jpg","descripcion":"KMI DSIGUAL","stock":20}
+]

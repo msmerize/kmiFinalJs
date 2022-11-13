@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KMI STORE</title>
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- ANIMACION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ICON -->
+	<link rel="icon" type="image/png" href="./img/smiley.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="b">
+    <header class="encabezado">
+        <div>
+            <a href="./index.html" class="kmi">KMI</a>
+        </div>
+        <nav class="nav">
+            <ul class="lista">
+                <li class="lis_item"><a href="./index.html">HOME</a></li>
+                <li class="lis_item"><a href="./index.html">PRODUCTS</a></li>
+                <li class="lis_item"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+
+            <div class="cart">
+                <button class="btn-carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+                <span id="item_total">0</span>
+            </div>
+        </nav>
+    </header>
+    <main class="checkout">
+    
+        <h1 class="checkout_titulo">Finalizar Compra</h1>
+        <div class="checkout_contenido">
+            <!-- FORM -->
+            <form action="" class="form" id="form">
+                <!-- NOMBRE -->
+                <div class="form_grupo">
+                    <label for="nombre" class="form_label">Nombre:</label>
+                    <div class="form_grupo-input">
+                        <input id="nombre" type="text" name="name" class="form_input" placeholder="Nombre" required>
+                        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+                        <i class="form_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="form_input-error">Nombre incorrecto, el campo solo admite letras.</p>
+                </div>
+                <!-- APELLIDO -->
+                <div class="form_grupo">
+                    <label for="surname" class="form_label">Apellido:</label>
+                    <div class="form_grupo-input">
+                        <input id="surname" type="text" name="surname" class="form_input" placeholder="Apellido" required>
+                        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+                        <i class="form_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="form_input-error">Apellido incorrecto, el campo solo admite letras.</p>
+                </div>
+                <!-- EMAIL -->
+                <div class="form_grupo">
+                    <label for="email" class="form_label">Email:</label>
+                    <div class="form_grupo-input">
+                        <input id="email" type="email" name="email" class="form_input" placeholder="mail@email" required>
+                        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+                        <i class="form_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="form_input-error">El correo solo puede contener letras, numeros, punto y guion bajo.</p>
+                </div>
+                <!-- TELEFONO -->
+                <div class="form_grupo">
+                    <label for="phone" class="form_label">Telefono:</label>
+                    <div class="form_grupo-input">
+                        <input id="phone" type="tel" name="phone" class="form_input" placeholder="1123876396" required>
+                        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+                        <i class="form_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="form_input-error">Numero Incorrecto.</p>
+                </div>
+                <!-- DNI -->
+                <div class="form_grupo">
+                    <label for="dni" class="form_label">Documento:</label>
+                    <div class="form_grupo-input">
+                        <input id="dni" type="text" name="dni" class="form_input" maxlength="8" placeholder="36616942" required>
+                        <i class="form_validacion-estado fa-solid fa-circle-xmark"></i>
+                        <i class="form_validacion-estado fa-solid fa-circle-check"></i>
+                    </div>
+                    <p class="form_input-error">Documento Incorrecto.</p>
+                </div>
+                <div class="form_mensajeError" id="form_mensajeError">
+                    <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Rellene el formulario correctamente.</p>
+                </div>
+                <div class="form_grupo form_grupo-btn">
+                    <button class="form_btn" type="submit"> Pagar con Mercado Pago</button>
+                    <p class="form_mensaje-exito">Formulario Exitoso!</p>
+                </div>
+            </form>
+            <div class="checkout_card">
+                <div class="checkout_card-contenido">
+                    <h2>CARRITO</h2>
+                    <div></div>
+                    <table id="checkout-product" class="checkout_table-product">
+                    </table>
+                    <hr>
+                    <table class="checkout_table-precio">
+                        <tr class="checkout_table-fila table-subtotal">
+                        <td class="t1">Subtotal</td>
+                        <td id="checkout-subtotal">$00</td>
+                        </tr>
+                        <tr class="checkout_table-fila table-total">
+                            <td class="t1">Total</td>
+                            <td id="checkout-total">$00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="ft" >
+        <div class="pie">
+            <div class="redes">
+                <h4>Contacto</h4>
+                <p>Horario de atención Lunes a Sábados de 10hs a 20hs</p>
+                <a href="">kmistore@gmail.com</a>
+            </div>
+            <div class="redes">
+                <h4>Redes Sociales</h4>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.facebook.com">Facebook</a>
+            </div>
+        </div>
+        <div class="derechos">
+            <hr>
+            <p>Copyright © 2022 KMISTORE</p>
+        </div>
+    </footer>
+    <!-- loader -->
+    <div id="loader" class="lds-ring loader loader2">
+        <div></div><div></div><div></div><div></div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/6a02e16f95.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- js -->
+    <script src="./js/checkoutCard.js"></script>
+    <script src="./js/checkout.js"></script>
+</body>
+</html>
